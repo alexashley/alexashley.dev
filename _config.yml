@@ -1,12 +1,11 @@
 title: Alex Ashley
 email: alexashley15@gmail.com
-description: >-
-  I'm a software engineer passionate about APIs, authentication systems, and application security. I have experience with JavaScript, Kotlin, and C#.
+description: ""
 baseurl: ""
 url: "https://alexashley.dev"
 github_username:  alexashley
 linkedin_username: alex-h-ashley
-
+rss: rss feed
 theme: minima
 plugins:
   - jekyll-feed
