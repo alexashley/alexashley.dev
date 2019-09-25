@@ -1,8 +1,8 @@
 ---
 layout: page
+permalink: /projects
+title: Projects
 ---
-
-# Projects
 
 I have a bad habit of starting and abandoning projects, so most of what is here are small repos or plugins that I worked on over a weekend.
  

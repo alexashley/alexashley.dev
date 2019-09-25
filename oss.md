@@ -1,8 +1,8 @@
 ---
 layout: page
+permalink: /oss
+title: Open Source
 ---
-
-# Open Source Contributions
 
 I use a lot of open source software and I enjoy being able to contribute back when I can (even if it's just in a very small way, which most of these are).
 
