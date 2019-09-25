@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://alexashley.dev"
 github_username:  alexashley
 linkedin_username: alex-h-ashley
-rss: rss feed
+rss: rss
 theme: minima
 plugins:
   - jekyll-feed
