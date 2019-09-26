@@ -130,6 +130,16 @@ which will set the client's internal not-before policy to a year in the future, 
 
 An attacker could use this to indefinitely deny access to applications using the adapter, short of some developer or administrator intervention to reset the not-before policy. 
 
+If you'd like to verify or play around with the issue, I made a small [repo](https://github.com/alexashley/nodejs-connect-repro) that provides an environment where the problem can be reproduced. 
+
+```bash
+git clone --recurse-submodules git@github.com:alexashley/nodejs-connect-repro.git
+make env
+curl http://localhost:3000/k_logout -d "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3Rpb24iOiJMT0dPVVQiLCJub3RCZWZvcmUiOjE2MDA5OTIwMDB9"
+```
+
+Keycloak will be running on port `8080` with credentials `keycloak`/`password`. The adapter's example application will be running on `3000` with credentials `user`/`password`. 
+
 ## Fix
 
 I reported this to Keycloak, following their security issue disclosure instructions. My first reproduction used a small Node.js script, but I realized eventually that it could just be a simple `curl` command.
